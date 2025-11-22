@@ -2,6 +2,9 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         elementDict={}
 
+        if len(s)!=len(t):
+            return False
+
         for letter in s:
             if letter in elementDict:
                 elementDict[letter]+=1
