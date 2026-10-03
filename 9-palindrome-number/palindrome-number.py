@@ -1,12 +1,12 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        newlist=[]
+        reverse=""
         x=str(x)
         for i in range(len(x)-1,-1,-1):
-            newlist.append(x[i])
+            reverse+=x[i]
         
 
-        if "".join(newlist)==x:
+        if reverse==x:
             return True
 
         return False
